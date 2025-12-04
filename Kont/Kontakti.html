@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset-kont.css">
+    <link rel="stylesheet" href="./style-kont.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="../home/index.html">
+            <img class="glavfoto" src="../image/Group 163 (1).png" alt="">
+          </a>
+          <input id="burger-toggle" type="checkbox">
+          <label for="burger-toggle">
+            <span></span>
+          </label>
+          <ul class="header__list">
+            <li>
+              <a href="../home/index.html" class="header__link">Главная</a>
+            </li>
+            <li>
+              <a href="../Onas/Onas.html" class="header__link">О нас</a>
+            </li>
+            <li>
+              <a href="../Katalog/katalog.html" class="header__link">Каталог</a>
+            </li>
+            <li>
+              <a href="../Uslugii/Uslugi.html" class="header__link">Услуги</a>
+            </li>
+            <li>
+              <a href="../Kont/Kontakti.html" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="main">
+        <section class="contacts-section">
+            <div class="container">
+                <h1 class="section-title">Наши контакты</h1>
+                <p class="section-subtitle">Мы всегда рады помочь с выбором комплектующих и ответить на ваши вопросы</p>
+                
+                <div class="contacts-grid">
+                    <!-- Контактная информация -->
+                    <div class="contacts-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <img class="addres" src="../drugoe/icons8-адрес-48.png">
+                            </div>
+                            <div class="contact-content">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, Петровка ул., 2</p>
+                                <p>Бизнес-центр "Системный Блок", офис 409</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <img class="addres" src="../drugoe/icons8-телефон-40.png">
+                            </div>
+                            <div class="contact-content">
+                                <h3>Телефон</h3>
+                                <p><a href="tel:+78001234567">+7 (952) 123-77-55</a> (бесплатно по РФ)</p>
+                                <p><a href="tel:+78001234567">+7 (800) 567-89-01</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <img class="addres" src="../drugoe/icons8-новый-пост-40.png">
+                            </div>
+                            <div class="contact-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@pchub.ru">comp@example.com</a></p>
+                                <p><a href="mailto:info@pchub.ru">pcquant@example.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <img class="addres" src="../drugoe/icons8-часы-40.png">
+                            </div>
+                            <div class="contact-content">
+                                <h3>Часы работы</h3>
+                                <p>Пн-Пт: 9:00 - 20:00</p>
+                                <p>Сб-Вс: 10:00 - 18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://vk.com/hyperpc" class="social-link"><img class="soci" src="../drugoe/icons8-vk-20.png"></a>
+                            <a href="https://t.me/compshop_ru" class="social-link"><img class="soci" src="../drugoe/icons8-телеграм-20.png"></a>
+                            <a href="https://dzen.ru/search?query=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8E%D1%82%D0%B5%D1%80%D1%8B&sid=107846502613421929" class="social-link"><img class="soci" src="../drugoe/icons8-яндекс-был-20.png"></a>
+                            <a href="https://www.twitch.tv/recrent" class="social-link"><img class="soci" src="../drugoe/icons8-twitch-20.png"></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Форма обратной связи -->
+                    <div class="contacts-form">
+                        <h2 class="form-title">Остались вопросы?</h2>
+                        <p class="form-subtitle">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+                        
+                        <form id="feedbackForm" class="feedback-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" name="subject">
+                                    <option value="">Выберите тему</option>
+                                    <option value="question">Вопрос по товару</option>
+                                    <option value="order">Статус заказа</option>
+                                    <option value="cooperation">Сотрудничество</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Карта -->
+         
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+
+          
+
+
+        <div class="svaz2">
+
+          <div class="text-full">
+            <div class="svaz">
+              <span class="kak">Свяжитесь с нами</span>
+            </div>
+            <div class="text-left">
+              <span class="left1">Мы рады ответить на все ваши вопросы, предоставить дополнительную информацию 
+                о наших услугах и организовать встречу для детального обсуждения ваших потребностей.</span>
+            </div>
+
+            <div class="full-a">
+              <div class="email">
+                <div class="icon">
+                 <img class="icon-e" src="../image/email.png">
+                </div>
+
+                <div class="kont">
+                  <div class="com">
+                    <span class="txt51">comp@example.com</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="nomer">
+                <div class="email">
+                  <div class="icon">
+                   <img class="icon-e" src="../image/phone.png">
+                  </div>
+
+                  <div class="kont">
+                    <div class="com">
+                      <span class="txt51">+7 (952) 123-77-55</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social">
+                <a href="https://vk.com/hyperpc">
+                  <div class="vk">
+                  <img class="vko" src="../image/vk.png">
+                </div></a>
+                
+
+                <a class="lol" href="https://t.me/compshop_ru">
+                  <div class="tg">
+                    <img class="tgk" src="../image/tg.png">
+                  </div>
+                </a>
+              
+
+                <a class="lol" href="https://dzen.ru/search?query=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8E%D1%82%D0%B5%D1%80%D1%8B&sid=107846502613421929">
+                <div class="odnk">
+                  <img class="od" src="../image/yandex.png">
+                </div>
+              </a>
+
+              <a class="lol" href="https://www.twitch.tv/recrent">
+                <div class="twitch">
+                  <img class="tw" src="../image/twch.png">
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+
+
+
+          <div class="karta">
+            <iframe class="krt" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfa71dfaa9871346919c6ec67f2f9965579ebd0ee9f18b28ece5af31dbffdffe&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+    </div>
+
+    <div class="her">
+<hr></hr>
+
+</div>
+
+<div class="foot">
+<div class="corp">
+  <span>Copyright © 2025 CyberQuant</span>
+</div>
+
+<div class="corp">
+  <span>ИНН: 123456789098</span>
+</div>
+
+<div class="corp">
+  <span>ОГРНИП: 123456789012345</span>
+</div>
+
+</div>
+</body>
+<script src="../js/script.js"></script>
+</html>
